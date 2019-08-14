@@ -12,21 +12,21 @@ Rails.describe 'StaticPages', type: :system do
 
   describe 'Help' do
     it 'タイトル内容の表示' do
-      visit static_pages_help_path
+      visit help_path
       expect(page).to have_title "Help | #{basetitle}"
     end
   end
 
   describe 'About' do
     it 'タイトル内容の表示' do
-      visit static_pages_about_path
+      visit about_path
       expect(page).to have_title "About | #{basetitle}"
     end
   end
 
-  describe 'About' do
+  describe 'Contact' do
     it 'タイトル内容の表示' do
-      visit static_pages_contact_path
+      visit contact_path
       expect(page).to have_title "Contact | #{basetitle}"
     end
   end
